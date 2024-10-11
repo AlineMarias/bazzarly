@@ -1,0 +1,2 @@
+# bazzarly
+paginação
