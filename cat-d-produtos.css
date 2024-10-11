@@ -1,0 +1,155 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e6f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #350641;
+    color: #fff;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Seção de produtos */
+.categorias {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.descricao-produto {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4c3677;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+footer .contato p {
+    margin: 5px 0;
+}
+
+footer .social a {
+    margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .search-bar input {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .social {
+        justify-content: center;
+    }
+}

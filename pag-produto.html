@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaarly - Calça Feminina</title>
+    <link rel="stylesheet" href="pag-produto.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">BAZAARLY</h1>
+        <input type="text" placeholder="Buscar produtos..." class="search-bar">
+        <div class="icons">
+            <span class="icon">👤</span>
+            <span class="icon">🛒</span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="product-gallery">
+            <button id="prevBtn" class="nav-btn">❮</button>
+            <div class="image-display">
+                <img id="mainImage" src="calsa.jpg" alt="Calça Feminina Estampada">
+            </div>
+            <button id="nextBtn" class="nav-btn">❯</button>
+            <div class="thumbnail">
+                <img class="thumb" src="calsa3.jpg" alt="Calça 1">
+                <img class="thumb" src="calsa.jpg" alt="Calça 2">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Calça Feminina Estampada Casual</h1>
+            <p class="price">R$ 31,30</p>
+
+            <div class="size-selection">
+                <h3>Tamanho</h3>
+                <div class="size-options">
+                    <button class="size-btn" data-size="P">P</button>
+                    <button class="size-btn" data-size="M">M</button>
+                    <button class="size-btn" data-size="G">G</button>
+                    <button class="size-btn" data-size="H">H</button>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <h3>Quantidade</h3>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button>
+            </div>
+
+            <button class="add-to-cart">Adicionar ao carrinho</button>
+            <button class="buy-now">COMPRE AGORA</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
